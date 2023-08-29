@@ -6,7 +6,12 @@
  */
 
 'use strict';
-
+// Récupère le 1er <h1>
+let h1 = document.querySelector('h1');
+// Retourne tous les <p> dans un tableau
 let tabPara = document.querySelectorAll('p');
+// Affiche le contenu des variables h1 et tabPara
+console.log(h1, tabPara);
+// Afficher le 1er <p>
+console.log(tabPara[0]);
 
-console.log(tabPara);
