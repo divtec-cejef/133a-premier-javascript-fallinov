@@ -6,6 +6,7 @@
  */
 
 'use strict';
+
 // Récupère le 1er <h1>
 let h1 = document.querySelector('h1');
 // Retourne tous les <p> dans un tableau
@@ -27,4 +28,16 @@ btAjouter.addEventListener('click', () => {
     // Vide le champ Article
     inputArticle.value = '';
 });
+
+// Demander l'âge du visiteur
+let ageVisiteur = prompt('Quel âge as-tu ?');
+// Transformer ageVisiteur en entier
+ageVisiteur = parseInt(ageVisiteur);
+// Tester si c'est un nombre
+if (isNaN(ageVisiteur)) {
+    alert('Erreur, entre un nombre !');
+} else {
+    alert(`Tu as ${ageVisiteur} ans`);
+}
+
 
